@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface CompanyRepository extends JpaRepository<CompanyEntity, Long> {
+public interface  CompanyRepository extends JpaRepository<CompanyEntity, Long> {
     boolean existsByTicker(String ticker);
 
     Optional<CompanyEntity> findByName(String name);
